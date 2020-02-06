@@ -73,6 +73,7 @@ endif ()
 
 include_directories(include)
 include_directories(${socket_can_INCLUDE_DIRS})
+include_directories(${costmap_converter_INCLUDE_DIRS})
 
 add_library(ars_40X_msg
     src/cluster_list.cpp
