@@ -128,6 +128,10 @@ install(
     LIBRARY DESTINATION lib/${PROJECT_NAME}
     RUNTIME DESTINATION lib/${PROJECT_NAME}
 )
+install(DIRECTORY
+  launch
+  DESTINATION share/${PROJECT_NAME}/
+)
 
 if ($ENV{ROS_VERSION} EQUAL 2)
   ament_package()
